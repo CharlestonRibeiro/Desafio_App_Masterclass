@@ -37,10 +37,7 @@ ThemeData customThemeData() {
       ),
     ),
 
-    appBarTheme:  const AppBarTheme(
-      backgroundColor: CustomColors.darkScaffoldBackground,
-      elevation: 0,
-    ),
+   
 
      
 
