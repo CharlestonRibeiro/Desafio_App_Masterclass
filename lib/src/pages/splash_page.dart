@@ -1,5 +1,4 @@
-import 'package:desafio_app_masterclass/src/core/custom_colors.dart';
-import 'package:desafio_app_masterclass/src/core/custom_images.dart';
+import 'package:desafio_app_masterclass/src/core/images/custom_images.dart';
 import 'package:desafio_app_masterclass/src/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -14,13 +13,12 @@ class SplashPage extends StatelessWidget {
     Future.delayed(const Duration(seconds: 5)).then((value) {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const HomePage()),
+        MaterialPageRoute(builder: (context) => HomePage()),
       );
     });
        return Scaffold(
-           backgroundColor: CustomColors.scaffoldBackground,
            body: Center(
-            child: Image.asset(CustomImages.logo),
+            child: Image.asset(CustomImages.masterclassLogo),
            ),
        );
   }
