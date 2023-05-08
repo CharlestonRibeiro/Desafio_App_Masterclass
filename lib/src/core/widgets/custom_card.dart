@@ -1,6 +1,6 @@
 import 'package:desafio_app_masterclass/src/core/images/custom_images.dart';
 import 'package:desafio_app_masterclass/src/core/size_extensions/size_extensions.dart';
-import 'package:desafio_app_masterclass/src/core/ux/colors/custom_colors.dart';
+import 'package:desafio_app_masterclass/src/core/colors/custom_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -8,15 +8,21 @@ class CustomCard extends StatelessWidget {
   final String name;
   final String number;
   final String title;
+  final String image;
 
   const CustomCard(
-      {Key? key, required this.name, required this.number, required this.title})
+      {Key? key,
+      required this.name,
+      required this.number,
+      required this.title,
+      required this.image})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 220,
+        height: context.percentHeight(0.2376),
+        width: context.percentWidth(0.9346),
       decoration: BoxDecoration(
         color: CustomColors.cardBackground,
         borderRadius: BorderRadius.circular(28),
@@ -24,6 +30,7 @@ class CustomCard extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -31,17 +38,20 @@ class CustomCard extends StatelessWidget {
                 Row(
                   children: [
                     Container(
-                      width: 43,
-                      height: 43,
+                      height: context.percentHeight(0.0464),
+                      width: context.percentWidth(0.1005),
+                      
+                      // height: 46,
+                      // width: 46,
                       decoration: BoxDecoration(
                         color: Colors.blue,
                         borderRadius: BorderRadius.circular(21.5),
                       ),
                       child: Center(
                         child: SvgPicture.asset(
-                          CustomImages.man,
-                          width: 30.89,
-                          height: 25.1,
+                          image,
+                          height: context.percentHeight(0.0356),
+                          width: context.percentWidth(0.0771),
                         ),
                       ),
                     ),
@@ -80,18 +90,12 @@ class CustomCard extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
-              height: context.percentHeight(.05),
-            ),
             Text(
               title,
               style: Theme.of(context)
                   .textTheme
                   .titleMedium
                   ?.copyWith(color: CustomColors.bodyText),
-            ),
-            SizedBox(
-              height: context.percentHeight(.05),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -100,10 +104,10 @@ class CustomCard extends StatelessWidget {
                   children: [
                     SvgPicture.asset(
                       CustomImages.github,
-                      width: 30.89,
-                      height: 25.1,
+                      height: context.percentHeight(0.0216),
+                      width: context.percentWidth(0.0479),
                     ),
-                     SizedBox(
+                    SizedBox(
                       width: context.percentHeight(.01),
                     ),
                     Text(

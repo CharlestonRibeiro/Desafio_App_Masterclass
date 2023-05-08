@@ -1,11 +1,8 @@
-import 'package:desafio_app_masterclass/src/core/ux/colors/custom_colors.dart';
+import 'package:desafio_app_masterclass/src/core/colors/custom_colors.dart';
 import 'package:flutter/material.dart';
 
 ThemeData customThemeData() {
   return ThemeData(
-
-    
-    
 
     scaffoldBackgroundColor: CustomColors.darkScaffoldBackground, 
 
@@ -23,7 +20,6 @@ ThemeData customThemeData() {
         fontWeight:  FontWeight.w600,
       ),
 
-
       titleMedium: TextStyle(
         fontFamily: 'Montserrat',
         fontSize: 14,
@@ -36,10 +32,6 @@ ThemeData customThemeData() {
         fontWeight: FontWeight.w400,
       ),
     ),
-
-   
-
-     
 
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(

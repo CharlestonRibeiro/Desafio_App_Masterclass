@@ -14,4 +14,9 @@ class CustomImages {
   static const target = 'assets/images/icon_target.svg';
   static const github = 'assets/images/icon_github.svg';
   static const moon = 'assets/images/icon_moon.svg';
+  static const facebook = 'assets/images/icon_facebook-f.svg';
+  static const whatsapp = 'assets/images/icon_whatsapp.svg';
+  static const instagram = 'assets/images/icon_instagram.svg';
+  static const myPhoto = 'assets/images/my_photo.jpeg';
+  
 }
