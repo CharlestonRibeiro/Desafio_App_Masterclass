@@ -2,10 +2,10 @@ import 'package:desafio_app_masterclass/src/core/colors/custom_colors.dart';
 import 'package:desafio_app_masterclass/src/core/size_extensions/size_extensions.dart';
 import 'package:desafio_app_masterclass/src/core/widgets/custom_app_bar.dart';
 import 'package:desafio_app_masterclass/src/core/widgets/custom_bottom_navigation_bar.dart';
-import 'package:desafio_app_masterclass/src/core/widgets/custom_card_portfolio.dart';
-import 'package:desafio_app_masterclass/src/core/widgets/custom_card_skills.dart';
-import 'package:desafio_app_masterclass/src/core/widgets/custom_technology_list.dart';
-import 'package:desafio_app_masterclass/src/pages/home_page.dart';
+import 'package:desafio_app_masterclass/src/modules/portifolio/Component/custom_card_portfolio.dart';
+import 'package:desafio_app_masterclass/src/modules/portifolio/Component/custom_card_skills.dart';
+import 'package:desafio_app_masterclass/src/modules/portifolio/Component/custom_technology_list.dart';
+import 'package:desafio_app_masterclass/src/modules/home/home_page.dart';
 import 'package:flutter/material.dart';
 
 class PortfolioPage extends StatelessWidget {

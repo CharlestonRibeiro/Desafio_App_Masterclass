@@ -17,19 +17,19 @@ ThemeData customThemeData() {
       headlineSmall : TextStyle(
         fontFamily: 'Poppins',
         fontSize: 16,
-        fontWeight:  FontWeight.w600,
+        fontWeight: FontWeight.w600,
       ),
 
       titleMedium: TextStyle(
         fontFamily: 'Montserrat',
         fontSize: 14,
-        fontWeight: FontWeight.w400,
+        fontWeight: FontWeight.w500,
       ),
 
       titleSmall : TextStyle(
         fontFamily: 'Montserrat',
         fontSize: 12,
-        fontWeight: FontWeight.w400,
+        fontWeight: FontWeight.w500,
       ),
     ),
 

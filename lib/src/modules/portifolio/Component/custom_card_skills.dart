@@ -15,6 +15,11 @@ class CustomCardSkills extends StatelessWidget {
         color: CustomColors.cardBackground,
         borderRadius: BorderRadius.circular(28),
       ),
+      child: Column(
+        children: [
+          Row()
+        ], 
+      ),
       
     );
   }

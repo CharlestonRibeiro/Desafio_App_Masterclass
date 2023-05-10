@@ -18,5 +18,12 @@ class CustomImages {
   static const whatsapp = 'assets/images/icon_whatsapp.svg';
   static const instagram = 'assets/images/icon_instagram.svg';
   static const myPhoto = 'assets/images/my_photo.jpeg';
+  static const flutter = 'assets/images/icon_flutter.svg';
+  static const firebase = 'assets/images/firebase.png';
+  static const mysql = 'assets/images/mysql.png';
+  static const python = 'assets/images/python.png';
+  static const django = 'assets/images/django.png';
+  static const dart = 'assets/images/dart.png';
+  static const flutterPNG = 'assets/images/flutter.png';
   
 }

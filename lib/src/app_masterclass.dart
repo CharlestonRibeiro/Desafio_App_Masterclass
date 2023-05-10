@@ -1,7 +1,7 @@
 import 'package:desafio_app_masterclass/src/core/themes/custom_theme_data.dart';
-import 'package:desafio_app_masterclass/src/pages/home_page.dart';
-import 'package:desafio_app_masterclass/src/pages/portfolio_page.dart';
-import 'package:desafio_app_masterclass/src/pages/splash_page.dart';
+import 'package:desafio_app_masterclass/src/modules/home/home_page.dart';
+import 'package:desafio_app_masterclass/src/modules/portifolio/portfolio_page.dart';
+import 'package:desafio_app_masterclass/src/modules/splash/splash_page.dart';
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
 

@@ -1,5 +1,5 @@
 import 'package:desafio_app_masterclass/src/core/images/custom_images.dart';
-import 'package:desafio_app_masterclass/src/pages/home_page.dart';
+import 'package:desafio_app_masterclass/src/modules/home/home_page.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatelessWidget {
