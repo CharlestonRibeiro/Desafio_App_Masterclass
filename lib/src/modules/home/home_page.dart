@@ -4,7 +4,6 @@ import 'package:desafio_app_masterclass/src/services/size_extensions/size_extens
 import 'package:desafio_app_masterclass/src/core/widgets/custom_app_bar.dart';
 import 'package:desafio_app_masterclass/src/core/widgets/custom_bottom_navigation_bar.dart';
 import 'package:desafio_app_masterclass/src/modules/home/Component/custom_card.dart';
-import 'package:desafio_app_masterclass/src/modules/portifolio/portfolio_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -68,8 +67,7 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             )),
-            const CustomBottomNavigationBar(
-                customPersonOntap: PortfolioPage.route),
+            const CustomBottomNavigationBar(),
           ],
         ),
       ),

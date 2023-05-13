@@ -6,7 +6,6 @@ import 'package:desafio_app_masterclass/src/core/widgets/custom_bottom_navigatio
 import 'package:desafio_app_masterclass/src/modules/portifolio/Component/custom_card_portfolio.dart';
 import 'package:desafio_app_masterclass/src/modules/portifolio/Component/custom_card_skills.dart';
 import 'package:desafio_app_masterclass/src/modules/portifolio/Component/custom_technology_list.dart';
-import 'package:desafio_app_masterclass/src/modules/home/home_page.dart';
 import 'package:flutter/material.dart';
 
 class PortfolioPage extends StatelessWidget {
@@ -76,7 +75,7 @@ class PortfolioPage extends StatelessWidget {
             ),
             const Align(
               alignment: Alignment.bottomCenter,
-              child: CustomBottomNavigationBar(customPersonOntap: HomePage.route),
+              child: CustomBottomNavigationBar(),
             ),
           ],
         ),
