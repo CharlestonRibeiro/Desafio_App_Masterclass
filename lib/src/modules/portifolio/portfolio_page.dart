@@ -1,5 +1,6 @@
 import 'package:desafio_app_masterclass/src/core/colors/custom_colors.dart';
-import 'package:desafio_app_masterclass/src/core/size_extensions/size_extensions.dart';
+import 'package:desafio_app_masterclass/src/core/images/custom_images.dart';
+import 'package:desafio_app_masterclass/src/services/size_extensions/size_extensions.dart';
 import 'package:desafio_app_masterclass/src/core/widgets/custom_app_bar.dart';
 import 'package:desafio_app_masterclass/src/core/widgets/custom_bottom_navigation_bar.dart';
 import 'package:desafio_app_masterclass/src/modules/portifolio/Component/custom_card_portfolio.dart';
@@ -24,7 +25,7 @@ class PortfolioPage extends StatelessWidget {
               height: context.percentHeight(.04),
             ),
             const CustomAppBar(
-                title: 'Sobre o dev', caption: 'Flutterando Masterclass'),
+                customTitle: 'Sobre o dev', customCaption: 'Flutterando Masterclass', customImage: CustomImages.logo),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(

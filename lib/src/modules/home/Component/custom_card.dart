@@ -1,21 +1,24 @@
 import 'package:desafio_app_masterclass/src/core/images/custom_images.dart';
-import 'package:desafio_app_masterclass/src/core/size_extensions/size_extensions.dart';
+import 'package:desafio_app_masterclass/src/services/size_extensions/size_extensions.dart';
 import 'package:desafio_app_masterclass/src/core/colors/custom_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class CustomCard extends StatelessWidget {
-  final String name;
-  final String number;
-  final String title;
-  final String image;
+  final String customName;
+  final String customNumber;
+  final String customTitle;
+  final String customImage;
+  final VoidCallback? customFunction;
 
   const CustomCard(
       {Key? key,
-      required this.name,
-      required this.number,
-      required this.title,
-      required this.image})
+      required this.customName,
+      required this.customNumber,
+      required this.customTitle,
+      required this.customImage, 
+      required this.customFunction
+      })
       : super(key: key);
 
   @override
@@ -38,18 +41,16 @@ class CustomCard extends StatelessWidget {
                 Row(
                   children: [
                     Container(
-                      height: context.percentHeight(0.0464),
-                      width: context.percentWidth(0.1005),
+                      height: context.percentHeight(0.046449),
+                      width: context.percentWidth(0.100467),
                       
-                      // height: 46,
-                      // width: 46,
                       decoration: BoxDecoration(
                         color: Colors.blue,
                         borderRadius: BorderRadius.circular(21.5),
                       ),
                       child: Center(
                         child: SvgPicture.asset(
-                          image,
+                          customImage,
                           height: context.percentHeight(0.0356),
                           width: context.percentWidth(0.0771),
                         ),
@@ -59,7 +60,7 @@ class CustomCard extends StatelessWidget {
                       width: context.percentHeight(.01),
                     ),
                     Text(
-                      name,
+                      customName,
                       style: Theme.of(context)
                           .textTheme
                           .headlineSmall
@@ -80,7 +81,7 @@ class CustomCard extends StatelessWidget {
                       width: context.percentHeight(.01),
                     ),
                     Text(
-                      number,
+                      customNumber,
                       style: Theme.of(context)
                           .textTheme
                           .titleMedium
@@ -91,7 +92,7 @@ class CustomCard extends StatelessWidget {
               ],
             ),
             Text(
-              title,
+              customTitle,
               style: Theme.of(context)
                   .textTheme
                   .titleMedium
@@ -119,7 +120,7 @@ class CustomCard extends StatelessWidget {
                     ),
                   ],
                 ),
-                ElevatedButton(onPressed: () {}, child: const Text('Ver mais')),
+                ElevatedButton(onPressed: customFunction, child: const Text('Ver mais')),
               ],
             )
           ],

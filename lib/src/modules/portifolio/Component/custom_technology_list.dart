@@ -1,5 +1,5 @@
 import 'package:desafio_app_masterclass/src/core/images/custom_images.dart';
-import 'package:desafio_app_masterclass/src/core/size_extensions/size_extensions.dart';
+import 'package:desafio_app_masterclass/src/services/size_extensions/size_extensions.dart';
 import 'package:desafio_app_masterclass/src/modules/portifolio/Component/custom_technology_card.dart';
 import 'package:flutter/material.dart';
 

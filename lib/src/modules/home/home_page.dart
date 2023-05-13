@@ -1,5 +1,6 @@
 import 'package:desafio_app_masterclass/src/core/images/custom_images.dart';
-import 'package:desafio_app_masterclass/src/core/size_extensions/size_extensions.dart';
+import 'package:desafio_app_masterclass/src/modules/studies/studies_animation_page.dart';
+import 'package:desafio_app_masterclass/src/services/size_extensions/size_extensions.dart';
 import 'package:desafio_app_masterclass/src/core/widgets/custom_app_bar.dart';
 import 'package:desafio_app_masterclass/src/core/widgets/custom_bottom_navigation_bar.dart';
 import 'package:desafio_app_masterclass/src/modules/home/Component/custom_card.dart';
@@ -13,6 +14,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    void navigateBack(value) => Navigator.of(context).pushNamed(value);
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -22,7 +24,7 @@ class HomePage extends StatelessWidget {
               height: context.percentHeight(.04),
             ),
             const CustomAppBar(
-                title: 'Atividades', caption: 'Flutterando Masterclass'),
+                customTitle: 'Atividades', customCaption: 'Flutterando Masterclass', customImage:CustomImages.logo),
             Expanded(
                 child: SingleChildScrollView(
               child: Column(
@@ -30,31 +32,35 @@ class HomePage extends StatelessWidget {
                   SizedBox(
                     height: context.percentHeight(.02),
                   ),
-                  const CustomCard(
-                    name: 'Animações',
-                    number: '4',
-                    title:
+                  
+                  CustomCard(
+                    customName: 'Animações',
+                    customNumber: '4',
+                    customTitle:
                         'Estudos sobre animações implícitas e controladas, contendo 4 exercícios e 2 estudos',
-                    image: CustomImages.man,
+                    customImage: CustomImages.man,
+                    customFunction: () => navigateBack(StudiesAnimationPage.route),
                   ),
                   SizedBox(
                     height: context.percentHeight(.02),
                   ),
-                  const CustomCard(
-                    name: 'Leitura de Mockup',
-                    number: '2',
-                    title:
+                  CustomCard(
+                    customName: 'Leitura de Mockup',
+                    customNumber: '2',
+                    customTitle:
                         'Aplicação da técnica de leitura de mockup, contendo 2 exercícios',
-                    image: CustomImages.glasses,
+                    customImage: CustomImages.glasses,
+                    customFunction: (){},
                   ),
                   SizedBox(
                     height: context.percentHeight(.02),
                   ),
-                  const CustomCard(
-                    name: 'Playground',
-                    number: '3',
-                    title: 'Ambiente destinado a testes e estudos em geral',
-                    image: CustomImages.toys,
+                  CustomCard(
+                    customName: 'Playground',
+                    customNumber: '3',
+                    customTitle: 'Ambiente destinado a testes e estudos em geral',
+                    customImage: CustomImages.toys,
+                    customFunction: (){},
                   ),
                   SizedBox(
                     height: context.percentHeight(.02),

@@ -3,7 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:desafio_app_masterclass/src/core/colors/custom_colors.dart';
 import 'package:desafio_app_masterclass/src/core/images/custom_images.dart';
-import 'package:desafio_app_masterclass/src/core/size_extensions/size_extensions.dart';
+import 'package:desafio_app_masterclass/src/services/size_extensions/size_extensions.dart';
 
 class CustomBottomNavigationBar extends StatelessWidget {
   final String customPersonOntap;

@@ -25,5 +25,5 @@ class CustomImages {
   static const django = 'assets/images/django.png';
   static const dart = 'assets/images/dart.png';
   static const flutterPNG = 'assets/images/flutter.png';
-  
+  static const iconArrow = 'assets/images/icon_arrow.svg';
 }
