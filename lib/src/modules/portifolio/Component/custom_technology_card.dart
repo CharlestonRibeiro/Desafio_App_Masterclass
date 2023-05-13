@@ -25,22 +25,28 @@ class CustomTechnologyCard extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             customImage.contains('svg')
-                  ? SvgPicture.asset(
-                      customImage,
-                    )
-                  : Image.asset(
-                      customImage,
-                    ),
+                  ? Expanded(
+                    child: SvgPicture.asset(
+                        customImage,
+                      ),
+                  )
+                  : Expanded(
+                    child: Image.asset(
+                        customImage,
+                      ),
+                  ),
                                   
                     SizedBox(
                       height: context.percentHeight(0.01),
                     ),
-            Text(
-              customText,
-              style: Theme.of(context)
-                  .textTheme
-                  .titleSmall
-                  ?.copyWith(color: CustomColors.lightScaffoldBackground),
+            Expanded(
+              child: Text(
+                customText,
+                style: Theme.of(context)
+                    .textTheme
+                    .titleSmall
+                    ?.copyWith(color: CustomColors.lightScaffoldBackground),
+              ),
             ),
           ],
         ),

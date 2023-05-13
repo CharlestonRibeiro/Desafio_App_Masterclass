@@ -62,39 +62,41 @@ class _CustomCardPortfolioState extends State<CustomCardPortfolio> {
             SizedBox(
               height: context.percentHeight(.05),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SvgPicture.asset(
-                  CustomImages.whatsapp,
-                  width: context.percentWidth(0.0343),
-                  height: context.percentHeight(0.0343),
-                ),
-                SizedBox(
-                  width: context.percentWidth(.05),
-                ),
-                SvgPicture.asset(
-                  CustomImages.github,
-                  width: context.percentWidth(0.0343),
-                  height: context.percentHeight(0.0343),
-                ),
-                SizedBox(
-                  width: context.percentWidth(.05),
-                ),
-                SvgPicture.asset(
-                  CustomImages.instagram,
-                  width: context.percentWidth(0.0343),
-                  height: context.percentHeight(0.0343),
-                ),
-                SizedBox(
-                  width: context.percentWidth(.05),
-                ),
-                SvgPicture.asset(
-                  CustomImages.facebook,
-                  width: context.percentWidth(0.0343),
-                  height: context.percentHeight(0.0343),
-                ),
-              ],
+            Expanded(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SvgPicture.asset(
+                    CustomImages.whatsapp,
+                    width: context.percentWidth(0.0343),
+                    height: context.percentHeight(0.0343),
+                  ),
+                  SizedBox(
+                    width: context.percentWidth(.05),
+                  ),
+                  SvgPicture.asset(
+                    CustomImages.github,
+                    width: context.percentWidth(0.0343),
+                    height: context.percentHeight(0.0343),
+                  ),
+                  SizedBox(
+                    width: context.percentWidth(.05),
+                  ),
+                  SvgPicture.asset(
+                    CustomImages.instagram,
+                    width: context.percentWidth(0.0343),
+                    height: context.percentHeight(0.0343),
+                  ),
+                  SizedBox(
+                    width: context.percentWidth(.05),
+                  ),
+                  SvgPicture.asset(
+                    CustomImages.facebook,
+                    width: context.percentWidth(0.0343),
+                    height: context.percentHeight(0.0343),
+                  ),
+                ],
+              ),
             )
           ],
         ),
