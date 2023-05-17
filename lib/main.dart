@@ -7,7 +7,7 @@ void main() => runApp(
  //   DevicePreview(
  //     enabled: !kReleaseMode,
 //      builder: (context) => 
-      const AppMasterclass(), 
+       const AppMasterclass(), 
 //    ),
   );
 

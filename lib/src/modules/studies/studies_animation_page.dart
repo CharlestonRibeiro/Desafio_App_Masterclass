@@ -21,7 +21,7 @@ class StudiesAnimationPage extends StatelessWidget {
           CustomAppBar(
               customTitle: 'Animações',
               customCaption: 'Flutterando Masterclass',
-              customImage: CustomImages.iconArrow,
+              customImage: CustomImages.iconArrow ,
               customFunction: navigateBack),
           SizedBox(
             height: context.percentHeight(.03),

@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
              SizedBox(
               height: context.percentHeight(.04),
             ),
-            const CustomAppBar(
+           const CustomAppBar(
                 customTitle: 'Atividades', customCaption: 'Flutterando Masterclass', customImage:CustomImages.logo),
             Expanded(
                 child: SingleChildScrollView(

@@ -18,7 +18,7 @@ class GitRepositoryPage extends StatelessWidget {
               SizedBox(
             height: context.percentHeight(.03),
           ),
-              const CustomAppBar(customTitle: 'Repositórios', customCaption: 'Flutterando Masterclass', customImage: CustomImages.logo),
+             const CustomAppBar(customTitle: 'Repositórios', customCaption: 'Flutterando Masterclass', customImage: CustomImages.logo),
               Expanded(child: Container()),
               const CustomBottomNavigationBar()
             ],

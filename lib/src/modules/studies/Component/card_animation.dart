@@ -6,53 +6,55 @@ class CardAnimation extends StatelessWidget {
   final String customIndex;
   final String customNumber;
 
-  const CardAnimation({Key? key, required this.customIndex, required this.customNumber}) : super(key: key);
+  const CardAnimation(
+      {Key? key, required this.customIndex, required this.customNumber})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: context.percentHeight(0.069146),
       width: context.percentWidth(0.946262),
-      decoration: BoxDecoration(
-        color: CustomColors.cardBackground,
-        borderRadius: BorderRadius.circular(28),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Container(
-              height: context.percentHeight(0.0464),
-              width: context.percentWidth(0.077103),
-              decoration: BoxDecoration(
-                color: Colors.blue,
-                borderRadius: BorderRadius.circular(21.5),
+     
+      child: Card(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(28), // Define o raio da borda
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                height: context.percentHeight(0.0464),
+                width: context.percentWidth(0.077103),
+                decoration: BoxDecoration(
+                  color: CustomColors.primary,
+                  borderRadius: BorderRadius.circular(21.5),
+                ),
+                child: Center(child: Text(customIndex)),
               ),
-              child: Center(child: Text(customIndex)),
-            ),
-            Row(
-              children: [
-                Text(
-                  'Exercícios:',
-                  style: Theme.of(context)
-                      .textTheme
-                      .titleMedium
-                      ?.copyWith(color: CustomColors.textHighlight),
-                ),
-                SizedBox(
-                  width: context.percentHeight(.01),
-                ),
-                Text(
-                  customNumber,
-                  style: Theme.of(context)
-                      .textTheme
-                      .titleMedium
-                      ?.copyWith(color: CustomColors.textHighlight),
-                ),
-              ],
-            ),
-          ],
+              Row(
+                children: [
+                  Text(
+                    'Exercícios:',
+                    style: Theme.of(context)
+                        .textTheme
+                        .headlineSmall
+                  ),
+                  SizedBox(
+                    width: context.percentHeight(.01),
+                  ),
+                  Text(
+                    customNumber,
+                    style: Theme.of(context)
+                        .textTheme
+                        .headlineSmall
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );

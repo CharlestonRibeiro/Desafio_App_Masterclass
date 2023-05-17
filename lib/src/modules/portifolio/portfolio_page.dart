@@ -1,4 +1,3 @@
-import 'package:desafio_app_masterclass/src/core/colors/custom_colors.dart';
 import 'package:desafio_app_masterclass/src/core/images/custom_images.dart';
 import 'package:desafio_app_masterclass/src/services/size_extensions/size_extensions.dart';
 import 'package:desafio_app_masterclass/src/core/widgets/custom_app_bar.dart';
@@ -23,8 +22,10 @@ class PortfolioPage extends StatelessWidget {
             SizedBox(
               height: context.percentHeight(.04),
             ),
-            const CustomAppBar(
-                customTitle: 'Sobre o dev', customCaption: 'Flutterando Masterclass', customImage: CustomImages.logo),
+           const CustomAppBar(
+                customTitle: 'Sobre o dev',
+                customCaption: 'Flutterando Masterclass',
+                customImage: CustomImages.logo),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
@@ -44,7 +45,6 @@ class PortfolioPage extends StatelessWidget {
                           style: Theme.of(context)
                               .textTheme
                               .titleMedium
-                              ?.copyWith(color: CustomColors.textHighlight),
                         )),
                     SizedBox(
                       height: context.percentHeight(.02),
@@ -60,7 +60,6 @@ class PortfolioPage extends StatelessWidget {
                           style: Theme.of(context)
                               .textTheme
                               .titleMedium
-                              ?.copyWith(color: CustomColors.textHighlight),
                         )),
                     SizedBox(
                       height: context.percentHeight(.02),
@@ -82,7 +81,4 @@ class PortfolioPage extends StatelessWidget {
       ),
     );
   }
-
- 
 }
-

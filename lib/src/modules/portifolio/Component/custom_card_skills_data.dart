@@ -6,7 +6,9 @@ class CustomCardSkillsData extends StatelessWidget {
   final String text;
   final double value;
 
-  const CustomCardSkillsData({Key? key, required this.text, required this.value}) : super(key: key);
+  const CustomCardSkillsData(
+      {Key? key, required this.text, required this.value})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,13 +20,13 @@ class CustomCardSkillsData extends StatelessWidget {
           style: Theme.of(context)
               .textTheme
               .titleSmall
-              ?.copyWith(color: CustomColors.lightScaffoldBackground),
         ),
         SizedBox(
           width: context.percentWidth(.5981),
           child: LinearProgressIndicator(
-            backgroundColor: CustomColors.lightScaffoldBackground,
-            valueColor: const AlwaysStoppedAnimation<Color>(CustomColors.primary),
+            backgroundColor: CustomColors.lightBackground,
+            valueColor:
+                const AlwaysStoppedAnimation<Color>(CustomColors.primary),
             value: value,
           ),
         ),
