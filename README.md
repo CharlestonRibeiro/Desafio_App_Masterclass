@@ -8,30 +8,37 @@ O layout original pode ser encontrado [aqui](https://xd.adobe.com/view/6089d2f7-
 
 ## Preview
 
-<p align="center">
-<img src="https://github.com/CharlestonRibeiro/Desafio_App_Masterclass/blob/main/assets/app/untitled.gif" width="300" height="700" />
-<img src="https://github.com/CharlestonRibeiro/Desafio_App_Masterclass/blob/main/assets/app/untled.gif" width="300" height="700" />
-<img src="https://github.com/CharlestonRibeiro/Desafio_App_Masterclass/blob/main/assets/app/ntitled.gif" width="300" height="700" />
-</p>
+
 
 <p align="center">
 <img src="https://github.com/CharlestonRibeiro/Desafio_App_Masterclass/blob/main/assets/app/screenshot-1684437051809.png" width="300" height="700" />
 <img src="https://github.com/CharlestonRibeiro/Desafio_App_Masterclass/blob/main/assets/app/screenshot-1684437068970.png" width="300" height="700" />
-<img src="https://github.com/CharlestonRibeiro/Desafio_App_Masterclass/blob/main/assets/app/screenshot-1684437080034.png" width="300" height="700" />
 </p>
 
 <p align="center">
 <img src="https://github.com/CharlestonRibeiro/Desafio_App_Masterclass/blob/main/assets/app/screenshot-1684437097089.png" width="300" height="700" />
 <img src="https://github.com/CharlestonRibeiro/Desafio_App_Masterclass/blob/main/assets/app/screenshot-1684437110042.png" width="300" height="700" />
-<img src="https://github.com/CharlestonRibeiro/Desafio_App_Masterclass/blob/main/assets/app/screenshot-1684437118361.png" width="300" height="700" />
 </p>
 
 <p align="center">
 <img src="https://github.com/CharlestonRibeiro/Desafio_App_Masterclass/blob/main/assets/app/screenshot-1684437128585.png" width="300" height="700" />
 <img src="https://github.com/CharlestonRibeiro/Desafio_App_Masterclass/blob/main/assets/app/screenshot-1684437138089.png"width="300" height="700" />
+</p>
+
+<p align="center">
+<img src="https://github.com/CharlestonRibeiro/Desafio_App_Masterclass/blob/main/assets/app/screenshot-1684437118361.png" width="300" height="700" />
 <img src="https://github.com/CharlestonRibeiro/Desafio_App_Masterclass/blob/main/assets/app/screenshot-1684437144105.png" width="300" height="700" />
 </p>
 
+<p align="center">
+<img src="https://github.com/CharlestonRibeiro/Desafio_App_Masterclass/blob/main/assets/app/screenshot-1684437080034.png" width="300" height="700" />
+<img src="https://github.com/CharlestonRibeiro/Desafio_App_Masterclass/blob/main/assets/app/untitled.gif" width="300" height="700" />
+</p>
+
+<p align="center">
+<img src="https://github.com/CharlestonRibeiro/Desafio_App_Masterclass/blob/main/assets/app/untled.gif" width="300" height="700" />
+<img src="https://github.com/CharlestonRibeiro/Desafio_App_Masterclass/blob/main/assets/app/ntitled.gif" width="300" height="700" />
+</p>
 
 ## Como usar
 
