@@ -1,7 +1,9 @@
+import 'package:desafio_app_masterclass/src/core/themes/theme_dependency_injection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:desafio_app_masterclass/src/core/images/custom_images.dart';
 import 'package:desafio_app_masterclass/src/services/size_extensions/size_extensions.dart';
+
 
 class CustomAppBar extends StatefulWidget {
   final String customTitle;
@@ -22,9 +24,9 @@ class CustomAppBar extends StatefulWidget {
 }
 
 class _CustomAppBarState extends State<CustomAppBar> {
-
   @override
   Widget build(BuildContext context) {
+    final themeDependencyInjection = ThemeDependencyInjection.of(context);
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Row(
@@ -60,7 +62,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
             ],
           ),
           IconButton(
-              onPressed: () {},
+              onPressed: ()  => themeDependencyInjection!.notifier!.toggleTheme(),
               icon: SvgPicture.asset(CustomImages.moon,
                   width: context.percentWidth(0.0501),
                   height: context.percentHeight(0.0237),
